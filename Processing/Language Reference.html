@@ -1,0 +1,1000 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0075)file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" style="" class=" js no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Language Reference (API) \ Processing 2+</title>
+
+		<link rel="icon" href="file:///C:/favicon.ico" type="image/x-icon">
+
+		
+		<meta name="Author" content="Processing Foundation">
+		<meta name="Publisher" content="Processing Foundation">
+		<meta name="Keywords" content="Processing, Sketchbook, Programming, Coding, Code, Art, Design">
+		<meta name="Description" content="Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts. Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology.">
+		<meta name="Copyright" content="All contents copyright the Processing Foundation, Ben Fry, Casey Reas, and the MIT Media Laboratory">
+
+		<script type="text/javascript" async="" src="./Language Reference_files/ga.js.download"></script><script src="./Language Reference_files/modernizr-2.6.2.touch.js.download" type="text/javascript"></script>
+		<link href="./Language Reference_files/style.css" rel="stylesheet" type="text/css">
+
+
+	</head>
+	<body id="language" onload="">
+		<!-- ==================================== PAGE ============================ -->
+		<div id="container">
+			<!-- ==================================== HEADER ============================ -->
+			<div id="ribbon">
+				<ul class="left">
+					<li class="highlight"><a href="http://processing.org/">Processing</a></li>
+					<li><a href="http://p5js.org/">p5.js</a></li>
+					<li><a href="http://py.processing.org/">Processing.py</a></li>
+					<li><a href="http://android.processing.org/">Processing for Android</a></li>
+				</ul>
+				<ul class="right">
+					<li><a href="https://processingfoundation.org/">Processing Foundation</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div id="header">
+				<a href="file:///C:/" title="Back to the Processing cover."><div class="processing-logo" alt="Processing cover"></div></a>
+				<form name="search" method="get" action="http://www.google.com/search">
+				       <p><input type="hidden" name="as_sitesearch" value="processing.org">
+				       <input type="text" name="as_q" value="" size="20" class="text">
+				       <input type="submit" value=" "></p>
+				</form>
+			</div>
+			<div id="navigation">
+				<div class="navBar stuck" id="mainnav">
+	<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/index.html" class="active">Language</a><br>
+	<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/libraries/index.html">Libraries</a><br>
+	<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/tools/index.html">Tools</a><br>
+	<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/environment/index.html">Environment</a><br>
+</div>
+
+<script> document.querySelectorAll(".processing-logo")[0].className = "processing-logo"; </script>
+			</div>
+
+
+			<a id="TOP" name="TOP"></a>
+
+			<!-- ==================================== CONTENT - Headers ============================ -->
+			<div class="content">
+
+			 <h1 class="large-header"><span class="black">Reference.</span> Processing was designed to be a flexible software sketchbook.</h1>
+
+			<!-- <script src="<!- - webcontentpath - - >javascript/mode-select.js" type="text/javascript"></script>
+			<div class="ref-top">
+				<div id="ref-mode-text" style="display: none">
+					Processing code can be run in <a href="<!- - webcontentpath - - >environment/index.html#Programming_modes">different modes</a>. This reference unites the standard and Javascript flavours. Use the links to the left to highlight any differences.
+				</div>
+				<div id="ref-mode-switch">
+					<ul><li><a href="#" mode="java">Standard Processing</a></li>
+						<li><a href="#" mode="js">JavaScript (Processing.js)</a></li>
+					</ul>
+				</div>
+				<div id="ref-mode-switch-bottom"></div>
+			</div> -->
+
+<div class="ref-col">
+
+<div class="category">
+<b>Structure</b>
+
+<br><br>
+	
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/parentheses.html" class=" ref-link">() (parentheses)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/comma.html" class=" ref-link">, (comma)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/dot.html" class=" ref-link">. (dot)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/multilinecomment.html" class=" ref-link">/* */ (multiline comment)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/doccomment.html" class=" ref-link">/** */ (doc comment)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/comment.html" class=" ref-link">// (comment)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/semicolon.html" class=" ref-link">; (semicolon)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/assign.html" class=" ref-link">= (assign)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/arrayaccess.html" class=" ref-link">[] (array access)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/curlybraces.html" class=" ref-link">{} (curly braces)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/catch.html" class=" ref-link">catch</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/class.html" class=" ref-link">class</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/draw_.html" class=" ref-link">draw()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/exit_.html" class=" ref-link">exit()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/extends.html" class=" ref-link">extends</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/false.html" class=" ref-link">false</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/final.html" class=" ref-link">final</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/implements.html" class=" ref-link">implements</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/import.html" class=" ref-link">import</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loop_.html" class=" ref-link">loop()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/new.html" class=" ref-link">new</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noLoop_.html" class=" ref-link">noLoop()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/null.html" class=" ref-link">null</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/popStyle_.html" class=" ref-link">popStyle()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/private.html" class=" ref-link">private</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/public.html" class=" ref-link">public</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/pushStyle_.html" class=" ref-link">pushStyle()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/redraw_.html" class=" ref-link">redraw()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/return.html" class=" ref-link">return</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/setup_.html" class=" ref-link">setup()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/static.html" class=" ref-link">static</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/super.html" class=" ref-link">super</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/this.html" class=" ref-link">this</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/thread_.html" class=" ref-link">thread()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/true.html" class=" ref-link">true</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/try.html" class=" ref-link">try</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/void.html" class=" ref-link">void</a>
+
+</div>
+<div class="category">
+<b>Environment</b>
+<br><br>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/cursor_.html" class=" ref-link">cursor()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/delay_.html" class=" ref-link">delay()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/displayDensity_.html" class=" ref-link">displayDensity()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/focused.html" class=" ref-link">focused</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/frameCount.html" class=" ref-link">frameCount</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/frameRate_.html" class=" ref-link">frameRate()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/frameRate.html" class=" ref-link">frameRate</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/fullScreen_.html" class=" ref-link">fullScreen()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/height.html" class=" ref-link">height</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noCursor_.html" class=" ref-link">noCursor()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noSmooth_.html" class=" ref-link">noSmooth()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/pixelDensity_.html" class=" ref-link">pixelDensity()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/pixelHeight.html" class=" ref-link">pixelHeight</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/pixelWidth.html" class=" ref-link">pixelWidth</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/settings_.html" class=" ref-link">settings()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/size_.html" class=" ref-link">size()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/smooth_.html" class=" ref-link">smooth()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/width.html" class=" ref-link">width</a>
+
+</div>
+<div class="category">
+<b>Data</b>
+	<h5>Primitive</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/boolean.html" class=" ref-link">boolean</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/byte.html" class=" ref-link">byte</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/char.html" class=" ref-link">char</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/color_datatype.html" class=" ref-link">color</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/double.html" class=" ref-link">double</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/float.html" class=" ref-link">float</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/int.html" class=" ref-link">int</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/long.html" class=" ref-link">long</a>
+	<h5>Composite</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/Array.html" class=" ref-link">Array</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/ArrayList.html" class=" ref-link">ArrayList</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/FloatDict.html" class=" ref-link">FloatDict</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/FloatList.html" class=" ref-link">FloatList</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/HashMap.html" class=" ref-link">HashMap</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/IntDict.html" class=" ref-link">IntDict</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/IntList.html" class=" ref-link">IntList</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/JSONArray.html" class=" ref-link">JSONArray</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/JSONObject.html" class=" ref-link">JSONObject</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/Object.html" class=" ref-link">Object</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/String.html" class=" ref-link">String</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/StringDict.html" class=" ref-link">StringDict</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/StringList.html" class=" ref-link">StringList</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/Table.html" class=" ref-link">Table</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/TableRow.html" class=" ref-link">TableRow</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/XML.html" class=" ref-link">XML</a>
+	<h5>Conversion</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/binary_.html" class=" ref-link">binary()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/booleanconvert_.html" class=" ref-link">boolean()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/byteconvert_.html" class=" ref-link">byte()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/charconvert_.html" class=" ref-link">char()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/floatconvert_.html" class=" ref-link">float()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/hex_.html" class=" ref-link">hex()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/intconvert_.html" class=" ref-link">int()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/strconvert_.html" class=" ref-link">str()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/unbinary_.html" class=" ref-link">unbinary()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/unhex_.html" class=" ref-link">unhex()</a>
+	<h5>String Functions</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/join_.html" class=" ref-link">join()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/match_.html" class=" ref-link">match()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/matchAll_.html" class=" ref-link">matchAll()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/nf_.html" class=" ref-link">nf()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/nfc_.html" class=" ref-link">nfc()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/nfp_.html" class=" ref-link">nfp()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/nfs_.html" class=" ref-link">nfs()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/split_.html" class=" ref-link">split()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/splitTokens_.html" class=" ref-link">splitTokens()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/trim_.html" class=" ref-link">trim()</a>
+
+	<h5>Array Functions</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/append_.html" class=" ref-link">append()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/arrayCopy_.html" class=" ref-link">arrayCopy()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/concat_.html" class=" ref-link">concat()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/expand_.html" class=" ref-link">expand()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/reverse_.html" class=" ref-link">reverse()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/shorten_.html" class=" ref-link">shorten()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/sort_.html" class=" ref-link">sort()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/splice_.html" class=" ref-link">splice()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/subset_.html" class=" ref-link">subset()</a>
+
+</div>
+<div class="category">
+<b>Control</b>
+
+	<h5>Relational Operators</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/inequality.html" class=" ref-link">!= (inequality)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/lessthan.html" class=" ref-link">&lt; (less than)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/lessthanorequalto.html" class=" ref-link">&lt;= (less than or equal to)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/equality.html" class=" ref-link">== (equality)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/greaterthan.html" class=" ref-link">&gt; (greater than)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/greaterthanorequalto.html" class=" ref-link">&gt;= (greater than or equal to)</a>
+	<h5>Iteration</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/for.html" class=" ref-link">for</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/while.html" class=" ref-link">while</a>
+	<h5>Conditionals</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/conditional.html" class=" ref-link">?: (conditional)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/break.html" class=" ref-link">break</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/case.html" class=" ref-link">case</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/continue.html" class=" ref-link">continue</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/default.html" class=" ref-link">default</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/else.html" class=" ref-link">else</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/if.html" class=" ref-link">if</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/switch.html" class=" ref-link">switch</a>
+	<h5>Logical Operators</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/logicalNOT.html" class=" ref-link">! (logical NOT)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/logicalAND.html" class=" ref-link">&amp;&amp; (logical AND)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/logicalOR.html" class=" ref-link">|| (logical OR)</a>
+
+</div>
+</div><div class="ref-col">
+
+<div class="category">
+<b>Shape</b>
+<br><br>
+	
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/createShape_.html" class=" ref-link">createShape()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadShape_.html" class=" ref-link">loadShape()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/PShape.html" class=" ref-link">PShape</a>
+	<h5>2D Primitives</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/arc_.html" class=" ref-link">arc()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/ellipse_.html" class=" ref-link">ellipse()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/line_.html" class=" ref-link">line()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/point_.html" class=" ref-link">point()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/quad_.html" class=" ref-link">quad()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/rect_.html" class=" ref-link">rect()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/triangle_.html" class=" ref-link">triangle()</a>
+	<h5>Curves</h5>
+
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/bezier_.html" class=" ref-link">bezier()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/bezierDetail_.html" class=" ref-link">bezierDetail()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/bezierPoint_.html" class=" ref-link">bezierPoint()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/bezierTangent_.html" class=" ref-link">bezierTangent()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/curve_.html" class=" ref-link">curve()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/curveDetail_.html" class=" ref-link">curveDetail()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/curvePoint_.html" class=" ref-link">curvePoint()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/curveTangent_.html" class=" ref-link">curveTangent()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/curveTightness_.html" class=" ref-link">curveTightness()</a>
+
+	<h5>3D Primitives</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/box_.html" class=" ref-link">box()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/sphere_.html" class=" ref-link">sphere()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/sphereDetail_.html" class=" ref-link">sphereDetail()</a>
+	<h5>Attributes</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/ellipseMode_.html" class=" ref-link">ellipseMode()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/rectMode_.html" class=" ref-link">rectMode()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/strokeCap_.html" class=" ref-link">strokeCap()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/strokeJoin_.html" class=" ref-link">strokeJoin()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/strokeWeight_.html" class=" ref-link">strokeWeight()</a>
+	<h5>Vertex</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/beginContour_.html" class=" ref-link">beginContour()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/beginShape_.html" class=" ref-link">beginShape()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/bezierVertex_.html" class=" ref-link">bezierVertex()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/curveVertex_.html" class=" ref-link">curveVertex()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/endContour_.html" class=" ref-link">endContour()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/endShape_.html" class=" ref-link">endShape()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/quadraticVertex_.html" class=" ref-link">quadraticVertex()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/vertex_.html" class=" ref-link">vertex()</a>
+	<h5>Loading &amp; Displaying</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/shape_.html" class=" ref-link">shape()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/shapeMode_.html" class=" ref-link">shapeMode()</a>
+</div>
+<div class="category">
+<b>Input</b>
+	<h5>Mouse</h5>
+
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mouseButton.html" class=" ref-link">mouseButton</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mouseClicked_.html" class=" ref-link">mouseClicked()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mouseDragged_.html" class=" ref-link">mouseDragged()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mouseMoved_.html" class=" ref-link">mouseMoved()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mousePressed_.html" class=" ref-link">mousePressed()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mousePressed.html" class=" ref-link">mousePressed</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mouseReleased_.html" class=" ref-link">mouseReleased()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mouseWheel_.html" class=" ref-link">mouseWheel()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mouseX.html" class=" ref-link">mouseX</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mouseY.html" class=" ref-link">mouseY</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/pmouseX.html" class=" ref-link">pmouseX</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/pmouseY.html" class=" ref-link">pmouseY</a>
+	<h5>Keyboard</h5>
+
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/key.html" class=" ref-link">key</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/keyCode.html" class=" ref-link">keyCode</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/keyPressed_.html" class=" ref-link">keyPressed()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/keyPressed.html" class=" ref-link">keyPressed</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/keyReleased_.html" class=" ref-link">keyReleased()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/keyTyped_.html" class=" ref-link">keyTyped()</a>
+
+	<h5>Files</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/BufferedReader.html" class=" ref-link">BufferedReader</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/createInput_.html" class=" ref-link">createInput()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/createReader_.html" class=" ref-link">createReader()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/launch_.html" class=" ref-link">launch()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadBytes_.html" class=" ref-link">loadBytes()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadJSONArray_.html" class=" ref-link">loadJSONArray()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadJSONObject_.html" class=" ref-link">loadJSONObject()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadStrings_.html" class=" ref-link">loadStrings()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadTable_.html" class=" ref-link">loadTable()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadXML_.html" class=" ref-link">loadXML()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/parseJSONArray_.html" class=" ref-link">parseJSONArray()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/parseJSONObject_.html" class=" ref-link">parseJSONObject()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/parseXML_.html" class=" ref-link">parseXML()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/selectFolder_.html" class=" ref-link">selectFolder()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/selectInput_.html" class=" ref-link">selectInput()</a>
+	<!--<h5>Web</h5>-->
+		<!-- input:web -->
+
+	<h5>Time &amp; Date</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/day_.html" class=" ref-link">day()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/hour_.html" class=" ref-link">hour()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/millis_.html" class=" ref-link">millis()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/minute_.html" class=" ref-link">minute()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/month_.html" class=" ref-link">month()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/second_.html" class=" ref-link">second()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/year_.html" class=" ref-link">year()</a>
+
+</div>
+<div class="category">
+<b>Output</b>
+	<h5>Text Area</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/print_.html" class=" ref-link">print()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/printArray_.html" class=" ref-link">printArray()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/println_.html" class=" ref-link">println()</a>
+	<h5>Image</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/save_.html" class=" ref-link">save()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/saveFrame_.html" class=" ref-link">saveFrame()</a>
+	<h5>Files</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/beginRaw_.html" class=" ref-link">beginRaw()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/beginRecord_.html" class=" ref-link">beginRecord()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/createOutput_.html" class=" ref-link">createOutput()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/createWriter_.html" class=" ref-link">createWriter()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/endRaw_.html" class=" ref-link">endRaw()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/endRecord_.html" class=" ref-link">endRecord()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/PrintWriter.html" class=" ref-link">PrintWriter</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/saveBytes_.html" class=" ref-link">saveBytes()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/saveJSONArray_.html" class=" ref-link">saveJSONArray()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/saveJSONObject_.html" class=" ref-link">saveJSONObject()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/saveStream_.html" class=" ref-link">saveStream()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/saveStrings_.html" class=" ref-link">saveStrings()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/saveTable_.html" class=" ref-link">saveTable()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/saveXML_.html" class=" ref-link">saveXML()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/selectOutput_.html" class=" ref-link">selectOutput()</a>
+
+</div>
+
+<div class="category">
+<b>Transform</b>
+<br><br>
+	
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/applyMatrix_.html" class=" ref-link">applyMatrix()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/popMatrix_.html" class=" ref-link">popMatrix()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/printMatrix_.html" class=" ref-link">printMatrix()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/pushMatrix_.html" class=" ref-link">pushMatrix()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/resetMatrix_.html" class=" ref-link">resetMatrix()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/rotate_.html" class=" ref-link">rotate()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/rotateX_.html" class=" ref-link">rotateX()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/rotateY_.html" class=" ref-link">rotateY()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/rotateZ_.html" class=" ref-link">rotateZ()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/scale_.html" class=" ref-link">scale()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/shearX_.html" class=" ref-link">shearX()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/shearY_.html" class=" ref-link">shearY()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/translate_.html" class=" ref-link">translate()</a>
+
+</div>
+<div class="category">
+<b>Lights, Camera</b>
+	<!-- lights_camera -->
+	<h5>Lights</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/ambientLight_.html" class=" ref-link">ambientLight()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/directionalLight_.html" class=" ref-link">directionalLight()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/lightFalloff_.html" class=" ref-link">lightFalloff()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/lights_.html" class=" ref-link">lights()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/lightSpecular_.html" class=" ref-link">lightSpecular()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noLights_.html" class=" ref-link">noLights()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/normal_.html" class=" ref-link">normal()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/pointLight_.html" class=" ref-link">pointLight()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/spotLight_.html" class=" ref-link">spotLight()</a>
+
+	<h5>Camera</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/beginCamera_.html" class=" ref-link">beginCamera()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/camera_.html" class=" ref-link">camera()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/endCamera_.html" class=" ref-link">endCamera()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/frustum_.html" class=" ref-link">frustum()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/ortho_.html" class=" ref-link">ortho()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/perspective_.html" class=" ref-link">perspective()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/printCamera_.html" class=" ref-link">printCamera()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/printProjection_.html" class=" ref-link">printProjection()</a>
+	<h5>Coordinates</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/modelX_.html" class=" ref-link">modelX()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/modelY_.html" class=" ref-link">modelY()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/modelZ_.html" class=" ref-link">modelZ()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/screenX_.html" class=" ref-link">screenX()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/screenY_.html" class=" ref-link">screenY()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/screenZ_.html" class=" ref-link">screenZ()</a>
+	<h5>Material Properties</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/ambient_.html" class=" ref-link">ambient()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/emissive_.html" class=" ref-link">emissive()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/shininess_.html" class=" ref-link">shininess()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/specular_.html" class=" ref-link">specular()</a>
+
+</div>
+</div><div class="ref-col">
+
+<div class="category">
+<b>Color</b>
+	<!-- color -->
+	<h5>Setting</h5>
+
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/background_.html" class=" ref-link">background()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/clear_.html" class=" ref-link">clear()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/colorMode_.html" class=" ref-link">colorMode()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/fill_.html" class=" ref-link">fill()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noFill_.html" class=" ref-link">noFill()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noStroke_.html" class=" ref-link">noStroke()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/stroke_.html" class=" ref-link">stroke()</a>
+
+	<h5>Creating &amp; Reading</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/alpha_.html" class=" ref-link">alpha()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/blue_.html" class=" ref-link">blue()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/brightness_.html" class=" ref-link">brightness()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/color_.html" class=" ref-link">color()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/green_.html" class=" ref-link">green()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/hue_.html" class=" ref-link">hue()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/lerpColor_.html" class=" ref-link">lerpColor()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/red_.html" class=" ref-link">red()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/saturation_.html" class=" ref-link">saturation()</a>
+
+</div>
+
+<div class="category">
+<b>Image</b>
+<br><br>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/createImage_.html" class=" ref-link">createImage()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/PImage.html" class=" ref-link">PImage</a>
+	<h5>Loading &amp; Displaying</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/image_.html" class=" ref-link">image()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/imageMode_.html" class=" ref-link">imageMode()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadImage_.html" class=" ref-link">loadImage()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noTint_.html" class=" ref-link">noTint()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/requestImage_.html" class=" ref-link">requestImage()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/tint_.html" class=" ref-link">tint()</a>
+	<h5>Textures</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/texture_.html" class=" ref-link">texture()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/textureMode_.html" class=" ref-link">textureMode()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/textureWrap_.html" class=" ref-link">textureWrap()</a>
+	<h5>Pixels</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/blend_.html" class=" ref-link">blend()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/copy_.html" class=" ref-link">copy()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/filter_.html" class=" ref-link">filter()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/get_.html" class=" ref-link">get()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadPixels_.html" class=" ref-link">loadPixels()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/pixels.html" class=" ref-link">pixels[]</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/set_.html" class=" ref-link">set()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/updatePixels_.html" class=" ref-link">updatePixels()</a>
+
+</div>
+<div class="category">
+<b>Rendering</b>
+	<br><br>
+	
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/blendMode_.html" class=" ref-link">blendMode()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/clip_.html" class=" ref-link">clip()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/createGraphics_.html" class=" ref-link">createGraphics()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noClip_.html" class=" ref-link">noClip()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/PGraphics.html" class=" ref-link">PGraphics</a>
+	<h5>Shaders</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadShader_.html" class=" ref-link">loadShader()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/PShader.html" class=" ref-link">PShader</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/resetShader_.html" class=" ref-link">resetShader()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/shader_.html" class=" ref-link">shader()</a>
+
+</div>
+<div class="category">
+<b>Typography</b>
+	<br><br>
+	
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/PFont.html" class=" ref-link">PFont</a>
+	<h5>Loading &amp; Displaying</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/createFont_.html" class=" ref-link">createFont()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/loadFont_.html" class=" ref-link">loadFont()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/text_.html" class=" ref-link">text()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/textFont_.html" class=" ref-link">textFont()</a>
+	<h5>Attributes</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/textAlign_.html" class=" ref-link">textAlign()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/textLeading_.html" class=" ref-link">textLeading()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/textMode_.html" class=" ref-link">textMode()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/textSize_.html" class=" ref-link">textSize()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/textWidth_.html" class=" ref-link">textWidth()</a>
+	<h5>Metrics</h5>
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/textAscent_.html" class=" ref-link">textAscent()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/textDescent_.html" class=" ref-link">textDescent()</a>
+
+</div>
+
+<div class="category">
+<b>Math</b>
+	<br><br>
+	
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/PVector.html" class=" ref-link">PVector</a>
+	<h5>Operators</h5>
+
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/modulo.html" class=" ref-link">% (modulo)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/multiply.html" class=" ref-link">* (multiply)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/multiplyassign.html" class=" ref-link">*= (multiply assign)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/addition.html" class=" ref-link">+ (addition)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/increment.html" class=" ref-link">++ (increment)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/addassign.html" class=" ref-link">+= (add assign)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/minus.html" class=" ref-link">- (minus)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/decrement.html" class=" ref-link">-- (decrement)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/subtractassign.html" class=" ref-link">-= (subtract assign)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/divide.html" class=" ref-link">/ (divide)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/divideassign.html" class=" ref-link">/= (divide assign)</a>
+
+	<h5>Bitwise Operators</h5>
+
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/bitwiseAND.html" class=" ref-link">&amp; (bitwise AND)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/leftshift.html" class=" ref-link">&lt;&lt; (left shift)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/rightshift.html" class=" ref-link">&gt;&gt; (right shift)</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/bitwiseOR.html" class=" ref-link">| (bitwise OR)</a>
+
+	<h5>Calculation</h5>
+
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/abs_.html" class=" ref-link">abs()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/ceil_.html" class=" ref-link">ceil()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/constrain_.html" class=" ref-link">constrain()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/dist_.html" class=" ref-link">dist()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/exp_.html" class=" ref-link">exp()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/floor_.html" class=" ref-link">floor()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/lerp_.html" class=" ref-link">lerp()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/log_.html" class=" ref-link">log()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/mag_.html" class=" ref-link">mag()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/map_.html" class=" ref-link">map()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/max_.html" class=" ref-link">max()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/min_.html" class=" ref-link">min()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/norm_.html" class=" ref-link">norm()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/pow_.html" class=" ref-link">pow()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/round_.html" class=" ref-link">round()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/sq_.html" class=" ref-link">sq()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/sqrt_.html" class=" ref-link">sqrt()</a>
+
+	<h5>Trigonometry</h5>
+
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/acos_.html" class=" ref-link">acos()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/asin_.html" class=" ref-link">asin()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/atan_.html" class=" ref-link">atan()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/atan2_.html" class=" ref-link">atan2()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/cos_.html" class=" ref-link">cos()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/degrees_.html" class=" ref-link">degrees()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/radians_.html" class=" ref-link">radians()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/sin_.html" class=" ref-link">sin()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/tan_.html" class=" ref-link">tan()</a>
+
+	<h5>Random</h5>
+
+		
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noise_.html" class=" ref-link">noise()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noiseDetail_.html" class=" ref-link">noiseDetail()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/noiseSeed_.html" class=" ref-link">noiseSeed()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/random_.html" class=" ref-link">random()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/randomGaussian_.html" class=" ref-link">randomGaussian()</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/randomSeed_.html" class=" ref-link">randomSeed()</a>
+
+</div>
+
+<div class="category">
+<b>Constants</b>
+<br><br>
+	
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/HALF_PI.html" class=" ref-link">HALF_PI</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/PI.html" class=" ref-link">PI</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/QUARTER_PI.html" class=" ref-link">QUARTER_PI</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/TAU.html" class=" ref-link">TAU</a>
+
+<a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/TWO_PI.html" class=" ref-link">TWO_PI</a>
+
+</div></div>
+
+
+			</div>
+
+			<!-- ==================================== FOOTER ============================ -->
+  			<div id="footer">
+    			<div id="copyright">Processing was initiated by <a href="http://benfry.com/">Ben Fry</a> and <a href="http://reas.com/">Casey Reas</a>. It is developed by a <a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/people/">small team of volunteers</a>.</div>
+    			<div id="colophon">
+
+                    <a href="file:///C:/Program%20Files/processing-3.3.6/modes/java/reference/copyright.html">© Info</a>
+
+                </div>
+  			</div>
+
+		</div>
+		<script src="./Language Reference_files/jquery-1.9.1.min.js.download"></script>
+		<script src="./Language Reference_files/site.js.download" type="text/javascript"></script>
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-40016511-1']);
+		  _gaq.push(['_setDomainName', 'processing.org']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	
+
+
+</body></html>

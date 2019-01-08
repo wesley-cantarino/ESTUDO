@@ -1,0 +1,96 @@
+/*--------------ARRAY--------------------*/	
+tipo [] name_array;
+name_array = new tipo [tam];	
+
+//tipo poder ser int, float, functions, class and etc;		
+/*---------------------------------------*/
+	
+/*--------------CLASS--------------------*/
+class_ship ship;
+
+void setup (){
+  size(800, 600);
+  ship = new class_ship (width/2, height/2);
+}
+
+void draw (){
+  background(6, 8, 10);
+
+  ship.draw_ship();
+}
+
+class class_ship {
+  float positionX, positionY;
+
+  class_ship (float w, float h){
+    positionX = w;
+    positionY = h;
+  }
+
+  void draw_ship (){
+    fill(255);
+    ellipse(positionX, positionY, 100, 100);
+  }
+}
+/*---------------------------------------*/
+
+/*--------class_vector_and_array---------*/
+ball [] balls = new ball[200];
+int tam = 0;
+
+void setup (){
+  size(400, 300, P2D);
+
+  balls[tam] = new ball(random(50, width - 50), random(50, height - 50));
+}
+
+void draw (){
+  background(80, 20, 150);
+
+  for(int i = 0; i <= tam; i++){
+    balls[i].cinematic();
+    balls[i].display();
+  }
+}
+
+void mousePressed(){
+  tam++;
+  balls[tam] = new ball(mouseX, mouseY);
+}
+
+class ball {
+  PVector position;
+  PVector speed = new PVector(0, 0);
+  PVector grav = new PVector(0, 0.5);
+
+  ball(float mouserX, float mouserY){
+    position = new PVector(mouserX, mouserY);
+  }
+
+  void cinematic (){
+    if ((position.y >= height - 10) && (0.8 * speed.y > 1)){
+      speed.y = -0.8 * speed.y;
+    }
+
+    position.add(speed);
+    speed.add(grav);
+  }
+
+  void display (){
+    ellipse(position.x, position.y, 20, 20);
+  }
+}
+/*---------------------------------------*/
+
+/*-----------array_PVector---------------*/	     
+// Create an array to store vectors
+PVector[] vectors = new PVector[3];
+
+// Create a vector for array position 0
+vectors[0] = new PVector();
+
+// Modify the PVector at position 0
+vectors[0].x = 9;
+vectors[0].y = 8;
+vectors[0].z = 7; 
+/*---------------------------------------*/
