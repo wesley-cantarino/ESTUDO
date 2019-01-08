@@ -1,0 +1,17 @@
+var name_object	= {
+  var_X: 120,
+  var_Y: 240
+}
+
+function setup (){
+	
+}
+
+function draw (){
+  //leitura
+  name_object.var_X;
+}
+
+//obs: ate o momento só serve para casos mais simples 
+//casos mais complexos usar class e array
+//obs: ate o momento não funciona com array e funções dentro de name_object

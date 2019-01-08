@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lista_de_livros>
+  <livro categoria="banco de dados">
+      <titulo>MySQL</titulo>
+      <autor>andre</autor>
+  </livro>
+
+  <livro categoria="banco de dados">
+      <titulo>PHP</titulo>
+      <autor>andre S</autor>
+  </livro>
+
+  <livro categoria="programação">
+      <titulo>Delphi</titulo>
+      <autor>andre SP</autor>
+  </livro>
+</lista_de_livros>
+
+<!-- é parecido com orientação a objeto pois temos a class lista_de_livros
+e dentro temos os objetos com seus respectivo nome, auto e outras variáveis-->

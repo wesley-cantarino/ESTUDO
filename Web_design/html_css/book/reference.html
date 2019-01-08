@@ -1,0 +1,377 @@
+<html>
+  <head>
+    <title>Reference :D</title>
+  </head>
+
+  <body>
+    <id="top">
+
+    <table>
+      <tr>
+        <td>HTML</td>
+      </tr>
+      <tr>
+        <td><a href="#c2">chapter 2</a></td>
+        <td><a href="#c3">chapter 3</a></td>
+        <td><a href="#c4">chapter 4</a></td>
+        <td><a href="#c5">chapter 5</a></td>
+      </tr>
+
+      <tr>
+        <td><a href="#c6">chapter 6</a></td>
+        <td><a href="#c7">chapter 7</a></td>
+        <td><a href="#c8">chapter 8</a></td>
+        <td><a href="#c9">chapter 9</a></td>
+      </tr>
+
+      <tr>
+        <td>CSS</td>
+      </tr>
+
+      <tr>
+        <td><a href="#c10">chapter 10</a></td>
+        <td><a href="#c11">chapter 11</a></td>
+        <td><a href="#c12">chapter 12</a></td>
+        <td><a href="#c13">chapter 13</a></td>
+      </tr>
+
+      <tr>
+        <td><a href="#c14">chapter 14</a></td>
+        <td><a href="#c15">chapter 15</a></td>
+        <td><a href="#c16">chapter 16</a></td>
+        <td><a href="#c17">chapter 17</a></td>
+      </tr>
+    </table>
+
+    <br>
+    <hr>
+    <h3>Referencias online</h3>
+    <a href="https://www.w3schools.com/"> w3schools muito bom</a>
+    <br>
+    <a href="https://developer.mozilla.org/en-US/"> moz://a Resources for developers, by developers.</a>
+    <hr>
+    <br>
+
+    <hr>
+    <h1 id="c2">chapter 2: Text</h1>
+    <hr>
+
+    <!-- Headings -->
+    <h1>Headings h1</h1>
+    <h2>Headings h2</h2>
+    <h3>Headings h3</h3>
+    <h4>Headings h4</h4>
+    <h5>Headings h5</h5>
+    <h6>Headings h6</h6>
+
+    <hr> <!-- horizontal line -->
+
+    <!-- Paragraphs -->
+    <p>:D A paragraph consists of one or more sentences that form a self-contained unit of discourse.</p>
+
+    <hr>
+
+    <!-- bold and italic -->
+    <p>this is how make a word appear <b>bold</b> and here in <i>italic</i></p>
+
+    <hr>
+
+    <!-- line breaks -->
+    <p>A paragraph consists of one or more sentences <br>that form a self-contained unit of discourse</p>
+
+    <hr>
+    <h1 id="c3">chapter 3: List</h1>
+    <hr>
+
+    <!-- 3 tipos são OBS: dentro de uma lista pode-se ter outras listas que não nescessáriamente são do mesmo tipo-->
+    <ol> <!-- ordenada -->
+      <li>ol is <b>O</b>rdered <b>L</b>ist</li>
+      <li>li é para colocar itens na lita</li>
+      <li>outro tópico</li>
+    </ol>
+
+    <ul> <!-- desordenada -->
+      <li>ol is <b>U</b>nordered <b>L</b>ist</li>
+      <li>li é para colocar itens na lita</li>
+      <li>outro tópico :D</li>
+    </ul>
+
+    <dl> <!-- lista de descrição -->
+      <dt>Southern lapwing</dt>
+        <dd>The southern lapwing is a wader in the order Charadriiformes. It is a common and widespread resident throughout South America, except in densely forested regions, the higher parts of the Andes and the arid coast of a large part of western South America</dd>
+    </dl>
+
+
+    <hr>
+    <h1 id="c4">chapter 4: Link</h1>
+    <hr>
+
+    <p><a href="https://www.google.com.br" target="_blank">google</a></p>
+    <a href="plus.html">plus paragraph</a>
+
+    <p>target="_blank" impede de abrir link na mesma página do meu site</p>
+
+    <hr>
+    <h1 id="c5">chapter 5: Images</h1>
+    <hr>
+
+    <img src="IMG/cthulhu.jpg" alt="A littler baby cthulhu" title="he is beautiful :)" />
+
+    <img src="IMG/cosmonaut-pixel-art.jpg" alt="cosmonauta" title="cosmonauta URSSS" width="200" height="200" />
+
+    <!-- exemple in code -->
+    <br><hr> <!-- o paragraph ficou preso atras da imgs -->
+    <p> <img src="IMG/quero_quero.jpg" alt="Bird" width="150" height="100"  align="left" />The southern lapwing is a wader in the order Charadriiformes. It is a common and widespread resident throughout South America, except in densely forested regions, the higher parts of the Andes and the arid coast of a large part of western South America</p><br><br><br>
+
+    <hr>
+    <h1 id="c6">chapter 6: tables</h1>
+    <hr>
+
+    <!-- basic exemple -->
+    <table>
+      <tr>
+        <td>58</td><td>55</td><td>50</td>
+      </tr>
+      <tr>
+        <td>60</td><td>64</td><td>57</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <table>
+      <tr bgcolor="#7c9fc1">
+        <th></th> <th scope="col">P1</th> <th scope="col">P2</th> <th scope="col">P3</th>
+      </tr>
+      <tr>
+        <td scope="row">Fen</td>
+        <td>58</td><td>55</td><td>50</td>
+      </tr>
+      <tr>
+        <td scope="row">EDP</td>
+        <td>60</td><td>64</td><td>57</td>
+      </tr>
+    </table>
+    <!-- para comer mais de 1 celula usar:
+      comer para direita: <td colspan="3">
+      comer para baixo: <td rowspan="3"> -->
+
+    <hr>
+    <h1 id="c7">chapter 7: Forms</h1>
+    <hr>
+
+    <form action="http://www.example.com.php" method="get">
+      <p>username:
+        <input type="text" name="username" size="15" maxlength="30" />
+      </p>
+
+      <p>Password:
+        <input type="password" name="password" size="15" maxlength="30" />
+      </p>
+    </form>
+
+    <form action="http://www.example.com.php">
+      <p>What did you think of this gig?</p>
+      <textarea name="comments" cols="20" rows="4">Enter your comments here ...</textarea>
+    </form>
+
+    <form action="index.html">
+      <p>Radio button
+        <input type="radio" name="genre" value="jazz" />Jazz
+      </p>
+    </form>
+
+    <form action="index.html">
+      <p>checkbox
+        <input type="checkbox" name="service" value="spotify">
+      </p>
+    </form>
+
+    <br>
+
+    <fieldset>
+      <legend>Contact details</legend>
+      <label>Email: <br>
+        <input type="text" name="email" />
+      </label>
+
+      <br>
+
+      <label>Telephone: <br>
+        <input type="text" name="email" />
+      </label>
+    </fieldset>
+
+    <br><br>
+
+    <hr>
+    <h1 id="c8">chapter 8: Extra markup</h1>
+    <hr>
+
+    <iframe src="plus.html" width="450" height="300">
+    </iframe>
+
+    <p lang="pt-br">uma página html dentro da outra hehehe</p>
+
+    <a href="https://www.maps.ie/create-google-map/"> este site é bom para maps :D</a>
+
+    <br>
+
+    <div style="width: 100%"><iframe width="450" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=11&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create a route on google maps</a></iframe></div><br />
+
+    <hr>
+    <h1 id="c9">chapter 9: Flash, video & audio</h1>
+    <hr>
+
+    <video src="VIDEO/Humans_HD_Stock_Video.mp4" autoplay poster="posterimage.jpg" width="300" height="200" muted="yes" loop="yes"></video> <br><br><br>
+
+    <hr>
+    <h1 id="c10">chapter 10: Introducing  CSS</h1>
+    <hr>
+
+    <!--
+    <head>
+      <style>
+        seletor{
+          propriedade: valor
+        }
+
+        exemplo:
+
+        body{
+          text-align: center;
+        }
+      </style>
+    </head>
+    -->
+
+    <div class="chapterrr">
+
+    <!-- usar externamente -->
+    <!-- <link href="styles.css" type="text/css" rel="stylesheet" /> -->
+
+    <style type="text/css">
+      body {
+      }
+      .chapterrr {
+        font-family: arial;
+        background-color: rgb(73, 179, 29);
+        border: 5px solid rgb(29, 100, 103);
+      }
+    </style>
+
+    <!-- fazendo dessa maneira (usando class) o CSS fica dentro apenas dessa class!!!!!!! maneira "errada" de usar
+    body {
+      font-family: arial;
+      background-color: rgb(185,179,175);
+    }
+
+    h1 {
+      color: rgb(3, 20, 82);
+      background-color: rgb(185,179,175);
+    }
+
+    a não ser que a pessoa queira esse estilo em toda a págica :) -->
+
+    <h1>Potatos</h1>
+    <p>there are dozens of diferent potato varieties</p>
+
+    </div>
+    <br>
+
+    <hr>
+    <h1 id="c11">chapter 11: Color</h1>
+    <hr>
+
+    <h4>HSL</h4>
+    <p>HSL pega a "fita" HUE e colocar em um circulo<br>portanto a cor e descrevida em função do ângulo :D (processing usa muito)</p>
+    <p>exemplo final do capítulo foi escada de PH<br>sacada genial de criar as class interna de paragraph (página 260)</p>
+
+    <hr>
+    <h1 id="c12">chapter 12: Text</h1>
+    <hr>
+
+    <p>não achei informações úteis agora. depois talvez eu ache</p>
+
+    <hr>
+    <h1 id="c13">chapter 13: Boxes</h1>
+    <hr>
+
+    <div class="borderrr">
+      <style type="text/css">
+        body {
+        }
+        p.one {
+          border-style: solid;
+        }
+        p.two {
+          border-width: 2px 4px 12px 2px;
+          border-style: ridge;
+          border-color: #379300 #379300 #379300 #379300;
+          padding: 10px;
+        }
+      </style>
+
+      <p class="one">Hello, World 1</p>
+      <br>
+      <p class="two">Hello, World 2</p>
+    </div>
+
+    <br><br>
+
+    <div class="boxxx">
+      <style type="text/css">
+        body {
+        }
+
+        p.onew {
+          border-style: solid;
+          border-color: rgb(255, 19, 11);
+          margin: 10px auto 10px auto;
+          text-align: center;
+          border-radius: 1em 4em 1em 4em;
+        }
+      </style>
+
+      <p>Hello, World 1</p>
+      <p class="onew">Hello, World 2</p>
+    </div>
+
+    <p>olhar exemplo da página 325, ele é muito bom :)</p>
+
+    <hr>
+    <h1 id="c14">chapter 14: List, Tables and Forms</h1>
+    <hr>
+
+    <div id="noww">
+      <style type="text/css">
+        body {
+        }
+
+        table.tab{
+          background-color: #80d6e2;
+          padding: 15px;
+          border: 2px solid #000000;
+          border-spacing: 10px 20px;
+        }
+      </style>
+
+      <table class="tab">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+        </tr>
+      </table>
+    </div>
+
+
+
+
+
+    <br><br><hr>
+    <p><a href="#top"> up?</a></p>
+  </body>
+</html>
