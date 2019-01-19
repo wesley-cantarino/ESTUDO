@@ -1,0 +1,38 @@
+HTML5 layout elements :)
+
+<header>
+  cabeçalho
+</header>
+
+<article>
+  artigo
+</article>
+
+
+
+<nav>
+  links de navegação
+
+  https://www.w3schools.com/tags/tag_nav.asp
+</nav>
+
+<section>
+  The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+
+  https://www.w3schools.com/tags/tag_section.asp
+</section>
+
+<div>
+  The <div> tag defines a division or a section in an HTML document.
+
+  https://www.w3schools.com/tags/tag_div.asp
+</div>
+
+
+
+<aside>
+  Coisas que não pertencem a texto principal
+</aside>
+
+<footer>
+</footer>

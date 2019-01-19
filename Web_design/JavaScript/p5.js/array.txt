@@ -1,0 +1,7 @@
+var name_array = [];
+
+o tamanho é definido:
+
+for(int TAM = 0; tam < 10; TAM++){
+  name_array[TAM] = 20;
+}
