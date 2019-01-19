@@ -1,0 +1,7 @@
+Quando for escrever em C no eclipse 
+ 
+Para criar arquivo:
+File > new > C project > /*digitar name*/ 
+project type (hello world ANSI C project) and toolchains(minGW GCC> finish
+
+depois de criado clicar em project > build project para que possa ser copilado
