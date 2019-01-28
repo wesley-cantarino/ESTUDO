@@ -1,0 +1,77 @@
+body, html{
+  height: 100%;
+}
+
+.init{
+  margin: 0px;
+}
+
+.cont_1{
+	height: 100%;
+  width: 100%;
+  background-color: #bfafff;
+
+
+  background-image: url('');
+
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.cont_2{
+	height: 100%;
+  width: 100%;
+  background-color: #baffaf;
+
+
+  background-image: url('');
+
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.cont_3{
+	height: 100%;
+  width: 100%;
+  background-color: #ffafaf;
+
+
+  background-image: url('');
+
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.cont_4{
+	height: 100%;
+  width: 100%;
+  background-color: #000000;
+
+
+  background-image: url('black-galaxy.png');
+
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.cont_5{
+	height: 100%;
+  width: 100%;
+  background-color: #aff3ff;
+
+
+  background-image: url('');
+
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}

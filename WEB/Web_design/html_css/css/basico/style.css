@@ -1,0 +1,41 @@
+body { /*seleciona toda a tag body*/
+  background: #836cac;
+  text-align: center; /*colocar no centro*/
+}
+
+h1 { /*seleciona toda a tag body*/
+  color: #f11282;
+}
+
+
+/*seletor id*/
+#pONE {
+  color: #f08557;
+}
+
+#pTWO {
+  color: #2e1105;
+  border:
+}
+
+#pTREE {
+  color: #57f0c2;
+  font-size: 20px;
+}
+
+/*seletor class*/
+.top {
+  color: #fc4ec6;
+  font-size: 30px;
+}
+
+
+/*Pseudo-class: quando o usuario passar o mauser por cima do objeto ele muda de padrão */
+
+p::selection{
+  background: #c13;
+}
+
+#esp:hover{ /**/
+  background: #289c6a;
+}
